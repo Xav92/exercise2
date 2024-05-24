@@ -12,7 +12,8 @@
 
 ## Question 1: 
 
-For the level Grabbing Just 1 commit, I used git cherry-pick. 
+For the level Grabbing Just 1 commit, 
+I used git cherry-pick. 
 -	First , I switch to the main branch using git checkout main 
 -	Then, I did git cherry-pick c4, that select the commit c4 that is bug free and will copy it under your current location that is main. 
 Recap: 
@@ -46,3 +47,21 @@ Recap:
 -	Git cherry-pick c2
 -	Git branch -f main HEAD^
 -	Git cherry-pick c2’ c3
+
+
+### Question 4: 
+
+For the level Diverged History.
+
+-	First clone the repo using git clone 
+-	Then, add a commit in the repo supposedly from a coworker using git fakeTeamwork
+-	 After,make a commit yourself on the local using git commit 
+-	Follow by , you work is different than the remote and I will not be able to push, so I rebase using git pull --rebase ( fetch + rebase).
+-	Finally, I will publish the work using git push
+
+Recap: 
+-	Git clone 
+-	Git fakeTeamwork
+-	Git commit
+-	Git pull --rebase
+-	Git push
